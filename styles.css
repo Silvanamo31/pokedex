@@ -1,0 +1,56 @@
+/* Estilos generales: Establecemos la fuente predeterminada y eliminamos los márgenes y el relleno predeterminados del cuerpo de la página para evitar espacios no deseados*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Estilos para el encabezado: Establecemos el color de fondo y el color del texto del encabezado, alineamos el texto al centro y agregamos relleno para mejorar la estética*/
+header {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+/* Estilos para el contenido principal: agregamos un relleno alrededor del contenido principal para separarlo visualmente del resto de la pagina*/
+main {
+  padding: 1rem;
+}
+.logo {
+  width: 100px;
+}
+/* Estilos para el contenedor de búsqueda de Pokémon: Centramos el contenido de búsqueda y agrefamos un margen inferior para separarlo del siguiente elemento*/
+
+.buscarPokemon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* Estilos para etiquetas y elementos de entrada: Agregamos estilos para las etiquetas, el campo de entrada de texto y el botón de busqueda como márgenes, relleno y colores de fondo y texto*/
+label {
+  margin-right: 0.5rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+/* Estilos para el contenedor de informacion del pokémon: añadimos un margen superior al contenedor de información del pokemon para separarlos de contenedor de búsqueda*/
+.pokemonInfo {
+  margin-top: 1rem;
+}
+
+/* Media queries para diseño responsive*/
+@media (min-width: 600px) /* Modificaciones para adaptar los estilos a móviles grandes*/ {
+}
+@media (min-width: 800px) {
+} /* Modificaciones para adaptar a tabletas. Al medir más de 600 píxeles ya cuenta con los cambios del bloque anterior*/
+
+@media (min-width: 1000px) {
+  /* Modificaciones para la version de escritorio. De nuevo, ya cuenta con las anteriores*/
+}

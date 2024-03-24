@@ -2,196 +2,211 @@
   --clr-black: #1c1c1c;
   --clr-gray: #ececec;
   --clr-white: #f7f7f7;
-  --type-normal: #A8A878;
-  --type-fire: #F08030;
-  --type-water: #6890F0;
-  --type-grass: #78C850;
-  --type-electric: #F8D030;
-  --type-ice: #98D8D8;
-  --type-fighting: #C03028;
-  --type-poison: #A040A0;
-  --type-ground: #E0C068;
-  --type-flying: #A890F0;
-  --type-psychic: #F85888;
-  --type-bug: #A8B820;
-  --type-rock: #B8A038;
+  --type-normal: #a8a878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-grass: #78c850;
+  --type-electric: #f8d030;
+  --type-ice: #98d8d8;
+  --type-fighting: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #a8b820;
+  --type-rock: #b8a038;
   --type-ghost: #705898;
   --type-dark: #705848;
-  --type-dragon: #7038F8;
-  --type-steel: #B8B8D0;
-  --type-fairy: #F0B6BC;
+  --type-dragon: #7038f8;
+  --type-steel: #b8b8d0;
+  --type-fairy: #f0b6bc;
 }
-
 
 /* Estilos generales: Establecemos la fuente predeterminada y eliminamos los márgenes y el relleno predeterminados del cuerpo de la página para evitar espacios no deseados*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  /* Estilos para el encabezado: Establecemos el color de fondo y el color del texto del encabezado, alineamos el texto al centro y agregamos relleno para mejorar la estética*/
-  header {
-    background-color: #f44336;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  /* Estilos para el contenido principal: agregamos un relleno alrededor del contenido principal para separarlo visualmente del resto de la pagina*/
-  main {
-    padding: 1rem;
-  }
-  .logo {
-    width: 100px;
-    margin-left: 1rem;
-  }
-  /* Estilos para el contenedor de búsqueda de Pokémon: Centramos el contenido de búsqueda y agrefamos un margen inferior para separarlo del siguiente elemento*/
-  
-  .buscarPokemon {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  /* Estilos para etiquetas y elementos de entrada: Agregamos estilos para las etiquetas, el campo de entrada de texto y el botón de busqueda como márgenes, relleno y colores de fondo y texto*/
-  label {
-    margin-right: 0.5rem;
-  }
-  
-  input[type="text"] {
-    padding: 0.5rem;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Estilos para el encabezado: Establecemos el color de fondo y el color del texto del encabezado, alineamos el texto al centro y agregamos relleno para mejorar la estética*/
+header {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+/* Estilos para el contenido principal: agregamos un relleno alrededor del contenido principal para separarlo visualmente del resto de la pagina*/
+main {
+  padding: 1rem;
+}
+.logo {
+  width: 100px;
+  margin-left: 1rem;
+}
+/* Estilos para el contenedor de búsqueda de Pokémon: Centramos el contenido de búsqueda y agrefamos un margen inferior para separarlo del siguiente elemento*/
 
-  button {
-    padding: 0.5rem 1rem;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
+.buscarPokemon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* Estilos para etiquetas y elementos de entrada: Agregamos estilos para las etiquetas, el campo de entrada de texto y el botón de busqueda como márgenes, relleno y colores de fondo y texto*/
+label {
+  margin-right: 0.5rem;
+}
 
-  /* Estilos para el contenedor de informacion del pokémon: añadimos un margen superior al contenedor de información del pokemon para separarlos de contenedor de búsqueda*/
-  .pokemonInfo {
-    margin-top: 1rem;
-  }
+input[type="text"] {
+  padding: 0.5rem;
+}
 
-  #allPokemon{
-    display: flex;
-    justify-content: center;
-  }
+button {
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
 
-  .pokemonImagen img {
-    margin: 5px;
-    width: 100%;
-    max-width: 6rem;
-    display: grid;
-    
-  }
+/* Estilos para el contenedor de informacion del pokémon: añadimos un margen superior al contenedor de información del pokemon para separarlos de contenedor de búsqueda*/
+.pokemonInfo {
+  margin-top: 1rem;
+}
 
-  .pokemonImagen{
-    padding-inline: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  
-  .pokemonInfo{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    padding-inline: 1rem;
-    align-items: center;
-    text-align: center;
-  }
+#allPokemon {
+  display: flex;
+  justify-content: center;
+}
 
-  .nombreContenedor {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.pokemonImagen img {
+  margin: 5px;
+  width: 100%;
+  max-width: 6rem;
+  display: grid;
+}
 
-  .pokemonId {
-    background-color: rgb(215, 215, 215);
-    padding: .25rem .5rem;
-    border-radius: 100vmax;
-    font-size: .75rem;
-    font-weight: 500;
-  }
+.pokemonImagen {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+}
 
-  .pokemonNombre {
-    font-size: 1.4rem;
-  }
+.pokemonInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline: 1rem;
+  align-items: center;
+  text-align: center;
+}
 
-  .pokemonTipos {
-    display: flex;
-    gap: .5rem;
-    font-size: .75rem;
-    font-weight: 500;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.nombreContenedor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .tipo {
-    padding: .25rem .5rem;
-    border-radius: 100vmax;
-  }
+.pokemonId {
+  background-color: rgb(215, 215, 215);
+  padding: 0.25rem 0.5rem;
+  border-radius: 100vmax;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
 
-  .pokemonStats{
-    display: flex;
-    gap: 1rem;
-    font-size: .85rem;
-  }
+.pokemonNombre {
+  font-size: 1.4rem;
+  color: #160148;
+}
 
-  .stat {
-    background-color: rgb(215, 215, 215);
-    padding: .25rem .5rem;
-    border-radius: 100vmax;
-  }
-  
+.pokemonTipos {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tipo {
+  padding: 0.25rem 0.5rem;
+  border-radius: 100vmax;
+}
+
+.pokemonStats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.stat {
+  background-color: rgb(211, 209, 209);
+  padding: 0.25rem 0.5rem;
+  border-radius: 100vmax;
+}
+
+.pokemonAll {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.pokemon {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 3rem -1rem;
+  padding-block: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.pokemonIdAtras {
+  position: absolute;
+  top: 1rem;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6rem;
+  font-weight: 800;
+  color: rgb(215, 215, 215);
+  z-index: -1;
+}
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: rgb(206, 204, 204);
+}
+
+/* Media queries para diseño responsive*/
+@media (min-width: 600px) {
   .pokemonAll {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .pokemon{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: 0 0 3rem -1rem;
-    padding-block: 1rem;
-    text-transform: uppercase;
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
+@media (min-width: 800px) {
+  .pokemonAll {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+@media (min-width: 1000px) {
+  .pokemonAll {
+    grid-template-columns: repeat(4, 1fr);
   }
-
-  .pokemonIdAtras {
-    position: absolute;
-    top: 1rem;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 6rem;
-    font-weight: 800;
-    color: rgb(215, 215, 215);
-    z-index: -1;
-  }
-
-  /* Media queries para diseño responsive*/
-  @media (min-width: 600px) /* Modificaciones para adaptar los estilos a móviles grandes*/ {
-  }
-  @media (min-width: 800px) {
-  } /* Modificaciones para adaptar a tabletas. Al medir más de 600 píxeles ya cuenta con los cambios del bloque anterior*/
-  
-  @media (min-width: 1000px) {
-    /* Modificaciones para la version de escritorio. De nuevo, ya cuenta con las anteriores*/
-  }
+}

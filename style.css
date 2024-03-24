@@ -67,7 +67,7 @@ button {
   cursor: pointer;
 }
 
-/* Estilos para el contenedor de informacion del pokémon: añadimos un margen superior al contenedor de información del pokemon para separarlos de contenedor de búsqueda*/
+/* Estilos para el contenedor de información del Pokémon: añadimos un margen superior al contenedor de información del Pokémon para separarlos de contenedor de búsqueda*/
 .pokemonInfo {
   margin-top: 1rem;
 }

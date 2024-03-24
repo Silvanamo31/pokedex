@@ -1,5 +1,5 @@
 "use strict";
-
+/* Obtener referencias a los elementos del DOM */
 const inputBuscar = document.getElementById("buscar");
 const botonBuscar = document.getElementById("botonBuscar");
 const pokemonInfo = document.getElementById("pokemonInfo");
@@ -89,16 +89,16 @@ function buscarPokemon() {
       );
     });
 }
-
+// Función para limpiar la búsqueda anterior
 function limpiarBusquedaAnterior() {
   // Limpiar la información previa de búsqueda cuando se escriba en el input
   pokemonInfo.innerHTML = "";
 }
-
+// Función para mostrar la información de los Pokémon
 function mostrarPokemon(pokemonDetails) {
   // Limpiar la información previa de Pokémon
   pokemonInfo.innerHTML = "";
-
+  // Iterar sobre los detalles de los Pokémon para mostrarlos en la página
   pokemonDetails.forEach((poke) => {
     // Crear un nuevo div para mostrar la información del Pokémon
     const div = document.createElement("div");

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokédex</title>
-
+    <!-- Enlaces iconos de la aplicación -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -23,9 +23,11 @@
       href="./img/favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="./img/favicon_io/site.webmanifest" />
+    <!-- Enlace archivo de estilos -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Logo Pokémon -->
     <img src="./img/pokemon.png" alt="Logo Pokémon" class="logo" />
 
     <header>
@@ -33,21 +35,22 @@
     </header>
 
     <main>
+      <!-- Contenedor busqueda de Pokémon -->
       <div class="buscarPokemon">
         <label for="buscar">Buscar Pokémon</label>
-
+        <!-- Campo de entrada de texto para introducir el nombre del Pokémon buscado -->
         <input
           type="text"
           id="buscar"
           placeholder="Introduce el nombre del Pokémon"
         />
-
+        <!-- Botón para iniciar la búsqueda -->
         <button id="botonBuscar">Buscar</button>
       </div>
-
+      <!-- Contenedor para mostrar la informacion del Pokémon -->
       <div class="pokemonInfo" id="pokemonInfo"></div>
 
-      <!-- Html de la caja de info -->
+      <!-- Contenedor para mostrar todos los Pokémon -->
       <div id="allPokemon">
         <div class="pokemonAll" id="pokemonList"></div>
       </div>
@@ -55,7 +58,7 @@
     <footer>
       © Nientiendo. Game developers in progress Daniel;Silvana;Damian
     </footer>
-
+    <!-- Enlace al archivo script de JavaScript -->
     <script src="./script.js"></script>
   </body>
 </html>
